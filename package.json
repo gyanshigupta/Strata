@@ -1,21 +1,18 @@
 {
   "name": "strata",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A polished command-line Git repository analyzer.",
+  "type": "module",
+  "bin": {
+    "strata": "./src/cli.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/cli.js",
+    "analyze": "node src/cli.js analyze",
+    "test": "node --test"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gyanshigupta/Strata.git"
+  "engines": {
+    "node": ">=18"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/gyanshigupta/Strata/issues"
-  },
-  "homepage": "https://github.com/gyanshigupta/Strata#readme"
+  "license": "MIT"
 }
