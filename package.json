@@ -1,0 +1,18 @@
+{
+  "name": "strata",
+  "version": "1.0.0",
+  "description": "A polished command-line Git repository analyzer.",
+  "type": "module",
+  "bin": {
+    "strata": "./src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "analyze": "node src/cli.js analyze",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
